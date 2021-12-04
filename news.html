@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RG</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+  
+        .swiper {
+          width: 100%;
+        }
+  
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          /* height: 300px; */
+          height: 400px;
+          margin: 0 20px;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 200px;
+          background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #news .title h1 span{
+            color: rgba(108,160,255,300);
+        }
+
+        .img_title {
+            position: relative;
+        }
+
+        .des {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 50%;
+            padding: 9px 9px;
+            /* align-items: center; */
+            background-color: #fff;
+            /* border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000; */
+        }
+       
+        
+      </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <span>RICH</span> GROUP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html">Invest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item search">
+                            <i class="far fa-search"></i>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="news" class="container w-100 my-3 py-5">
+        <div class="title text-center mt-3 pt-3"> 
+            <h1><span>NEW</span>S</h1>
+            <hr class="mx-auto">
+            <p>Hold and swipe</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="img_title">
+                        <img src="news_img/DCEH.jpg" width=100% class="small-img img-fluid mx-auto"/>
+                    </div>
+                    <div class="des">
+                        <h4>DA NANG CIRCULAR ECONOMIC NETWORK (DCEH)</h4>
+                        <p>DCEH is on its way to extend its impact on the economic.</p>
+                        <a href="news_detail.html">
+                            <button>See more</button>
+                        </a>
+                    </div>
+                  </div>
+              <div class="swiper-slide">
+                <div class="img_title">
+                    <img src="news_img/OPEN-CALL-FOR-BATCH-Xs-APPLICATION-3-940x511.png" width=100% class="small-img img-fluid mx-auto"/>
+                </div>
+                <div class="des">
+                    <h4>FINC OPEN BATCH X</h4>
+                    <p>Finc is a invest system which last for 3-6 months and might make you suprise.</p>
+                    <a href="news_detail.html">
+                        <button>See more</button>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_title">
+                    <img src="news_img/impactAim.png" width=100% class="small-img img-fluid mx-auto"/>
+                </div>
+                <div class="des">
+                    <h4>“IMPACT AIM: THE HIDDEN HERO” Project</h4>
+                    <p>Awake the hidden inside each impact startup. </p>
+                    <a href="news_detail.html">
+                        <button>See more</button>
+                    </a>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <div class="img_title">
+                    <img src="news_img/transport.jpg" width=100% class="small-img img-fluid mx-auto"/>
+                </div>
+                <div class="des">
+                    <h4>Vietnam to reattempt inter-provincial road transport</h4>
+                    <p>A brand new company has been realised and was choosen by many users</p>
+                    <a href="news_detail.html">
+                        <button>See more</button>
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_title">
+                    <img src="news_img/n5.jpg" width=100% class="small-img img-fluid mx-auto"/>
+                </div>
+                <div class="des">
+                    <h4>Japan entry ban waylays Vietnamese family reunion plans</h4>
+                    <p>The Japanese government’s latest entry ban on foreign arrivals over..</p>
+                    <a href="news_detail.html">
+                        <button>See more</button>
+                    </a>                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_title">
+                    <img src="news_img/recovery.jpg" width=100% class="small-img img-fluid mx-auto"/>
+                </div>
+                <div class="des">
+                    <h4>Vietnam prioritizes six pillars for economic recovery</h4>
+                    <p>The government will focus on six pillars to revive the economy post-pandemic...</p>
+                    <a href="news_detail.html">
+                        <button>See more</button>
+                    </a>                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_title">
+                    <img src="news_img/covid.jpg" width=100% class="small-img img-fluid mx-auto"/>
+                </div>
+                <div class="des">
+                    <h4>The impact of COVID 19 on economic</h4>
+                    <p>Covid news: Omicron detected in US; UK reports 48,374 new case.</p>
+                    <a href="news_detail.html">
+                        <button>See more</button>
+                    </a>                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="group-img-modified (1).png" alt="" class="img-fluid w-30 h-25">
+                <p>
+                    Some description of the brand to show its purposes in this field
+                </p>
+                    
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">Find</a></li>
+                    <li><a href="#">Invest</a></li>
+                    <li><a href="#">Show information</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Contact us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>
+                        FPT university Danang
+                    </p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>
+                        xxxxxxxxxxxxxx@gmail.com
+                    </p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>
+                        xxxxxxxxxxxxxx
+                    </p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12"> 
+                <div class="row">
+                    <img src="contact_gif.gif" alt="" class="img-fluid w-90 h-90 mb-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="payment.png" alt="" class="img-fluid w-90 h-20 mb-2">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap text-center d-flex align-items-center justify-content-center">
+                    <p>A product by RG ©</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-center d-flex align-items-center justify-content-center">
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="d-flex align-items-center justify-content-center"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2,
+              slideShadows: true,
+            },
+            loop: true,
+          });
+        </script>
+    <script>
+        const icon = document.querySelector('.icon');
+        const search = document.querySelector('.search');
+        icon.onclick = function() {
+            search.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

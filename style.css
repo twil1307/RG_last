@@ -1,0 +1,466 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+h6 {
+    color: #D8D8D8;
+}
+
+hr {
+    width: 30px;
+    height: 2px;
+    background-color: rgba(108,160,255,255);
+    
+}
+
+.star {
+    padding: 10px 0;
+}
+
+.star i {
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease; 
+}
+
+button:hover {
+    /* background-color: #3a3833; */
+    background-color: rgba(108,160,255,255);
+}
+
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    /* position: relative; */
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:hover,
+.navbar i.active{
+    color: rgba(108,160,255,255);
+
+    /* color: coral; */
+}
+
+.navbar-brand span {
+    color: rgba(108,160,255,255);
+}
+
+.navbar-brand {
+    font-weight: 900;
+}
+
+.navbar i {
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#home {
+    background-image: url('page1_background.gif');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#page1 span,
+#home span {
+    color: rgba(108,160,255,255);
+}
+
+.search {
+    position: relative;
+}
+
+.search.active {
+    width: 300px;
+}
+
+.search .icon {
+    position: absolute;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+
+
+/* Page 1 -------------------------------- */
+
+#page1 span {
+    color: rgba(108,160,255,300);
+    /* color: #fff; */
+}
+
+#page1 {
+    /* height: 100%; */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: rgb(177,201,235);
+    background-color: rgb(177,201,235);
+}
+
+#page1 .ctn {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; 
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+} 
+
+/* Page 2 + new ----------------------------------- */
+#page2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#page2 .title {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .title span {
+    color: rgba(108,160,255,255);
+}
+
+#new {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new .one img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0 10px;
+}
+
+#new .one .details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 900;
+}
+
+
+#new .one:hover .details {
+    cursor: pointer;
+    background-color: rgba(177,201,235, 0.6);
+}
+
+#page2 .more {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page2 .more a {
+    text-decoration: none;
+}
+
+#page2 .more button {
+    border-radius: 50px;
+    background-color: white;
+    color: #000;
+    border: 2px solid #000;
+}
+
+#page2 .more button:hover {
+    background-color: rgba(108,160,255,300);
+    color: white;
+    border: none;
+}
+
+/* one2 test */
+
+#new2 .title {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new2 .title span {
+    color: rgba(108,160,255,255);
+}
+
+#new2 .one img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* padding: 0 10px; */
+}
+
+#new2 .one .details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 900;
+}
+
+#new2 .one:hover .details {
+    cursor: pointer;
+    background-color: rgba(177,201,235, 0.6);
+}
+
+#new2 .one:hover img {
+    opacity: 0.7;
+}
+
+#new2 .more {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new2 .more a {
+    text-decoration: none;
+}
+
+#new2 .more button {
+    border-radius: 50px;
+    background-color: white;
+    color: #000;
+    border: 2px solid #000;
+}
+
+#new2 .more button:hover {
+    background-color: rgba(108,160,255,300);
+    color: white;
+    border: none;
+}
+
+/* Top invested - feature -------------------- */
+
+#featured {
+    background-color: rgb(177,201,235);
+}
+
+#featured h1 span {
+    color: rgba(108,160,255,300);
+}
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img {
+    transform: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.7;
+}
+
+.product .buy-btn {
+    background-color: black;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product:hover .buy-btn:hover {
+    background-color: rgba(108,160,255,300);
+}
+
+
+
+/* Banner-------------------------- */
+#banner {
+    background-image: url('banner.gif');
+    height: 70vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 70px center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#banner h1 {
+    color: rgba(108,160,255,300);
+}
+
+/* Top technology-------------------- */
+
+#technology {
+    background-color: rgb(177,201,235);
+}
+
+#technology h1 span {
+    color: rgba(108,160,255,300);
+}
+
+/* food industry -------------------- */
+
+#food-industry {
+    background-color: rgb(177,201,235);
+}
+
+
+/* footer ------------------------------ */
+
+footer h5 {
+    color: rgba(108,160,255,300);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li {
+    padding-bottom: 4px;
+}
+
+footer li a {
+    font-size:  0.8rem;
+    color: rgba(108,160,255,300);
+    opacity: 0.7;
+}
+
+footer .copyright a{
+    color: #000;
+    width: 38px;
+    height: 38px;
+    background-color: rgba(108,160,255,300);
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
+}
+
+/* About ---------------------------------------------- */
+#about-container .post .post-img {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#about-container .post img {
+    transition: 0.3s ease;
+}
+
+#about-container .post:hover img {
+    transform: scale(1.3) rotate(-10deg);
+    /* opacity: 0.9; */
+}
+
+#about-container .post h3 {
+    transition: 0.3s ease;
+    /* cursor: pointer; */
+}
+
+#about-container .post:hover h3 {
+    color: rgba(108,160,255,300);
+}

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RG</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/css/chat.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="./assets/css/typing.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #about-container img {
+            /* width: 100%; */
+            height: 100%;
+            box-sizing: border-box; 
+            object-fit: cover;
+        }
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+
+        .container1{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 100px;
+        }
+
+        .container1:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: url("img/bg.jpg") no-repeat center;
+            background-size: cover;
+            filter: blur(50px);
+            z-index: -1;
+        }
+        .contact-box{
+            max-width: 850px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+        }
+
+        .left{
+            background: url("member2.gif") no-repeat center;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .right{
+            padding: 25px 40px;
+        }
+
+        h2{
+            position: relative;
+            padding: 0 0 10px;
+            margin-bottom: 10px;
+        }
+
+        h2:after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            border-radius: 2px;
+            background-color: rgba(108,160,255,300);
+        }
+
+        .field{
+            width: 100%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            outline: none;
+            background-color: rgba(230, 230, 230, 0.6);
+            padding: 0.5rem 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 22px;
+            transition: .3s;
+        }
+
+        .field:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        textarea{
+            min-height: 150px;
+        }
+
+        .btn{
+            width: 100%;
+            padding: 0.5rem 1rem;
+            background-color: #000;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .btn:hover{
+            background-color: rgba(108,160,255,300);
+        }
+
+        .field:focus{
+            border: 2px solid rgba(108,160,255,300);
+            background-color: #fff;
+        }
+
+        @media screen and (max-width: 880px){
+            .contact-box{
+                grid-template-columns: 1fr;
+            }
+            .left{
+                height: 200px;
+            }
+        }
+
+        #role {
+            box-sizing: border-box;
+            border: 2px solid rgba(0, 0, 0, 0);
+        }
+
+        #chat-section {
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <span>RICH</span> GROUP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market.html">Market</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="far fa-search"></i>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <section id="about-home" class="pt-5 mt-5 container mb-5">
+        <div class="container mx-auto text-center">
+            <h1> <span style="color: rgba(108,160,255,300)">Contact</span> us</h1>
+        </div>
+        <hr class="mx-auto">
+
+    </section>
+
+    <section id="contactus">
+        <div class="container container1">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <form action="">
+                            <!-- <h2>Contact Us</h2> -->
+                        <input type="text" class="field" placeholder="Your Name" required>
+                        <input type="email" class="field" placeholder="Your Email" required>
+                        <input type="text" class="field" placeholder="Phone" required>
+                        
+                        <!-- <select id="role" name="role" class="field" placeholder="You are..">
+                            
+                            <option value="investors">Investor</option>
+                            <option value="start_up">Start-Up</option>
+                            <option value="else">Else</option>
+                        </select> -->
+                        <textarea placeholder="Message" class="field"></textarea>
+                        <a href="thanks.html">
+                            <button type="submit" class="btn">Send</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chat_section" class="pt-5 mt-5 mb-5">
+        <div class="container">
+            <div class="chatbox">
+                <div class="chatbox__support">
+                    <div class="chatbox__header">
+                        <div class="chatbox__image--header">
+                            <img src="./images/image.png" alt="image">
+                        </div>
+                        <div class="chatbox__content--header">
+                            <h4 class="chatbox__heading--header">Chat support</h4>
+                            <p class="chatbox__description--header">What is your proplem? Can we help you?</p>
+                        </div>
+                    </div>
+                    <div class="chatbox__messages">
+                        <div>
+                            <div class="messages__item messages__item--visitor">
+                                Can you let me talk to the support?
+                            </div>
+                            <div class="messages__item messages__item--operator">
+                                Sure!
+                            </div>
+                            <div class="messages__item messages__item--visitor">
+                                Need your help.
+                            </div>
+                            <div class="messages__item messages__item--operator">
+                                Hi... What is it? 
+                            </div>
+                            <div class="messages__item messages__item--typing">
+                                <span class="messages__dot"></span>
+                                <span class="messages__dot"></span>
+                                <span class="messages__dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chatbox__footer">
+                        <img src="./images/icons/emojis.svg" alt="">
+                        <img src="./images/icons/microphone.svg" alt="">
+                        <input type="text" placeholder="Write a message...">
+                        <p class="chatbox__send--footer" style="padding-top: 15px">Send</p>
+                        <img src="./images/icons/attachment.svg" alt="">
+                    </div>
+                </div>
+                
+                <div class="chatbox__button">
+                    <button>button</button>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img src="group-img-modified (1).png" alt="" class="img-fluid w-30 h-25" >
+                <p>
+                    Some description of the brand to show its purposes in this field
+                </p>
+                    
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">Find</a></li>
+                    <li><a href="#">Invest</a></li>
+                    <li><a href="#">Show information</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Contact us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>
+                        FPT university Danang
+                    </p>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>
+                        xxxxxxxxxxxxxx@gmail.com
+                    </p>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>
+                        xxxxxxxxxxxxxx
+                    </p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12"> 
+                <div class="row">
+                    <img src="contact_gif.gif" alt="" class="img-fluid w-90 h-90 mb-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12 text-center">
+                    <img src="payment.png" alt="" class="img-fluid w-90 h-20 mb-2">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap text-center align-content-lg-center justify-content-center">
+                    <p>A product by RG ©</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+
+    <script src="./assets/js/Chat.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
